@@ -4,7 +4,10 @@ import Header from "./My_components/Header";
 
 function App() {
   return (
+    <>
     <Header/>
+    <div className="bg"></div>
+    </>
     
   );
 }
