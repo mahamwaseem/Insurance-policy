@@ -16,9 +16,8 @@ app.use(express.json());
 app.use("/api/apply", applicationRoutes);
 
 // MongoDB Connection
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+mongoose.connect("mongodb://127.0.0.1:27017/loanDB ",{
+
 })
 .then(() => {
   console.log("MongoDB connected");
@@ -27,3 +26,7 @@ mongoose.connect(process.env.MONGO_URI, {
   });
 })
 .catch((err) => console.log(err));
+const PORT = 5000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+  });
