@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroSection from '../HeroSection';
+import HeroSection from './HeroSection';
 import './Home.css'; // Import external CSS for styling
 
 export default function Home() {
