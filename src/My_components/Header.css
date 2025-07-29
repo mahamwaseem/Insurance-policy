@@ -5,4 +5,19 @@
 .navbar-brand {
   font-family: 'Playwrite AU QLD', serif;
 }
+.apply-btn {
+  background-color: #93DA97;
+  color: white;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #4a7a59;
+}
+
 

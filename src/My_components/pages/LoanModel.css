@@ -16,7 +16,7 @@
   padding: 30px;
   border-radius: 12px;
   width: 90%;
-  max-width: 500px;
+  max-width: 400px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
@@ -33,7 +33,7 @@
 
 .close-btn {
   margin-top: 10px;
-  background: #e74c3c;
+  background: #5E936C;
   color: white;
   border: none;
   padding: 10px;
