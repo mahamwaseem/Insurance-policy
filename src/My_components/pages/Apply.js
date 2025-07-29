@@ -39,6 +39,8 @@ export default function Apply() {
   };
 
   return (
+    
+    <div className="apply-background">
     <div className="apply-container">
       <h2>Apply for a Loan</h2>
       <form onSubmit={handleSubmit} className="apply-form">
@@ -68,6 +70,7 @@ export default function Apply() {
 
         <button type="submit">Submit Application</button>
       </form>
+    </div>
     </div>
   );
 }
