@@ -1,0 +1,90 @@
+.hero-section {
+  position: relative;
+  background-image: url('./images/image1.jpg'); 
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: left;
+  padding: 60px 20px;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2; /* ensure content is above overlay */
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #93DA97;
+}
+
+.subheading {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.loan-title {
+  margin-top: 40px;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.loan-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  color: black;
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1 1 250px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card .badge {
+  background: #d9f7e9;
+  color: green;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+}
+
+.card h4 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #93DA97;
+  border: none;
+  color: #E8FFD7;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+

@@ -1,14 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from "./My_components/Header";
+import Footer from "./My_components/Footer";
+import Home from "./My_components/pages/Home";
+import Apply from './My_components/pages/Apply';
 
 function App() {
   return (
-    <>
-    <Header/>
-    <div className="bg"></div>
-    </>
-    
+    <Router>
+      <Header />
+      
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/apply" element={<Apply />} />
+      </Routes>
+      
+      <Footer />
+    </Router>
   );
 }
 
