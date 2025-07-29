@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -13,7 +14,7 @@ export default function Footer() {
             <p>Your trusted partner for smart financial solutions.</p>
           </div>
 
-          
+
 
           {/* Column 3 - Contact & Social */}
           <div className="col-md-4 mb-3">
@@ -21,11 +22,21 @@ export default function Footer() {
             <p>Email: support@finassure.com</p>
             <p>Phone: +92 300 1234567</p>
             <div className="d-flex gap-3">
-              <a href="#" className="text-light"><FaFacebookF /></a>
-              <a href="#" className="text-light"><FaTwitter /></a>
-              <a href="#" className="text-light"><FaInstagram /></a>
-              <a href="#" className="text-light"><FaLinkedinIn /></a>
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-light">
+                <FaFacebookF />
+              </a>
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="text-light">
+                <FaTwitter />
+              </a>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-light">
+                <FaInstagram />
+              </a>
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-light">
+                <FaLinkedinIn />
+              </a>
             </div>
+
+
           </div>
         </div>
 
