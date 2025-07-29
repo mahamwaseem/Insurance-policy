@@ -1,11 +1,14 @@
 .apply-container {
   max-width: 600px;
   margin: 40px auto;
-  background: #fefefe;
+  background: url('images/image.png') no-repeat center center;
+  background-size: cover;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  backdrop-filter: blur(4px);
 }
+
 
 .apply-container h2 {
   text-align: center;
@@ -34,7 +37,7 @@
 }
 
 .apply-form button {
-  background-color: #0077cc;
+  background-color: #5E936C;
   color: white;
   padding: 12px;
   border: none;
@@ -45,5 +48,5 @@
 }
 
 .apply-form button:hover {
-  background-color: #005fa3;
+  background-color: #E8FFD7;
 }
