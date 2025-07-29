@@ -1,8 +1,10 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const dotenv = require("dotenv");
 const applicationRoutes = require("./routes/applicationR");
 
+dotenv.config();
 
 const app = express();
 
@@ -14,8 +16,7 @@ app.use(express.json());
 app.use("/api", applicationRoutes);
 
 // MongoDB Connection
-mongoose.connect("mongodb://127.0.0.1:27017/loanDB", {
-
+mongoose.connect("mongodb://127.0.0.1:27017/loanDB ",{
 
 })
 .then(() => {
