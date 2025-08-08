@@ -28,17 +28,25 @@ A full-stack web application designed to streamline the process of providing ins
 git clone https://github.com/mahamwaseem/insurance-loan-system.git
 
 # Install frontend dependencies
+
 cd MY-components
+
 npm install
 
 # Install backend dependencies
+
 cd ../backend
+
 npm install
 
 # Run the backend server
+
 npm run server.js
 
 # Run the frontend app
+
 npm start
+
 cd ../frontend
+
 npm start
